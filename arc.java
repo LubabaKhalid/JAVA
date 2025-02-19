@@ -1,18 +1,18 @@
 import java.util.*;
-public class Car {
+public class arc {
     private String model;
     private String make;
     private int year;
     private double price;
 
-    public Car(){
+    public arc(){
         this.model="";
         this.make="";
         this.year=0;
         this.price=0.0;
     }
 
-    public Car(String model,String make,int year,double price){
+    public arc(String model,String make,int year,double price){
         this.model=model;
         this.make=make;
         this.year=year;
