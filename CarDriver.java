@@ -6,17 +6,17 @@ class Car {
     private double price;
 
     public Car(){
-        this.model="";
-        this.make="";
-        this.year=0;
-        this.price=0.0;
+        model="";
+        make="";
+        year=0;
+        price=0.0;
     }
 
     public Car(String model,String make,int year,double price){
-        this.model=model;
-        this.make=make;
-        this.year=year;
-        this.price=price;
+        model=model;
+        make=make;
+        year=year;
+        price=price;
     }
     public String getModel(){
         return model;
