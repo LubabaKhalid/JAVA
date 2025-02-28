@@ -1,4 +1,6 @@
 class Student{
+    String name;
+    int age;
     public void printInfo(String name){
         System.out.println(name);
 
@@ -15,7 +17,9 @@ class Student{
 public class Overloading {
     public static void main(String args[]){
         Student s=new Student();
-        s.printInfo("lubaba");
+        s.age=20;
+        s.name="Lubaba";
+        s.printInfo(s.age);
 
     }
 }
