@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #7e9543;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  .checkbox-group,
+  .radio-group {
+    margin-top: 5px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+
+  table, th, td {
+    border: 1px solid #888;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #83c589;
+  }
