@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+
+  <h1>Student Registration</h1>
+
+  <form>
+    
+    Full Name:<input type="text" id="name" placeholder="Enter full name">
+    <br>
+    <br>
+    Roll Number:<input type="number" id="roll" placeholder="Enter roll number">
+
+    <br>
+    <br>
+    Gender:<div class="radio-group">
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+    </div>
+
+    <br>
+    <br>
+    
+    Department:<select id="dept">
+      <option value="">Select Department</option>
+      <option value="CS">Computer Science</option>
+      <option value="Math">Data Science</option>
+      <option value="Physics">Software Engineering</option>
+      <option value="Physics">Information Technology</option>
+    </select>
+
+    <br>
+    <br>
+    Subjects Enrolled:<div class="checkbox-group">
+      <input type="checkbox" name="subject" value="Web"> Web Technologies
+      <input type="checkbox" name="subject" value="CN"> Computer Network
+      <input type="checkbox" name="subject" value="CV"> Computer Vision
+      <input type="checkbox" name="subject" value="AOA"> Machine Learning
+    </div>
+
+    <br>
+    <br>
+    Email:<input type="email" id="email" placeholder="example@school.com">
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <h2>Student Grades</h2>
+  <table>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Subject 1</th>
+      <th>Subject 2</th>
+      <th>Subject 3</th>
+      <th>Average</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Ali Ahmed</td>
+      <td>85</td>
+      <td>90</td>
+      <td>88</td>
+      <td>87.6</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Sara Khan</td>
+      <td>78</td>
+      <td>82</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+</body>
+</html>
