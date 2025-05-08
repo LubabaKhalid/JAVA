@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body >
+    <script>
+        var d=new Date();
+        var time=d.getHours();
+        if(time<=10){ 
+            document.write("<b>Good Morning<b>");}
+        else if(time>10 && time<=16){
+            document.write("<b>Good Afternoon<b>");
+        }
+        else if(time>16 && time<=19){
+            document.write("<b>Good Evening<b>");
+        }
+        else{
+            document.write("<b>Good Night<b>");
+        }
+        document.write("  ");
+        theDay=d.getDay()
+        switch(theDay)
+        {
+            case 1:
+                document.write("<b>Busy Monday<b>")
+                break
+            case 2:
+                document.write("<b>Busy Tuesday<b>")
+                break
+            case 3:
+                document.write("<b>Busy Wednesday<b>")
+                break
+            case 4:
+                document.write("<b>Busy Thursday<b>")
+                break
+            case 5:
+                document.write("<b>Finally Friday<b>")
+                break
+            case 6:
+                document.write("<b>Super Saturday<b>")
+                break
+            case 7:
+                document.write("<b>Sleepy Sunday<b>")
+                break
+            default:
+                    document.write(" ")
+            
+        }
+    </script>
+<form id="studentform">
+    
+    <h4>Fill The Form</h4>
+    <div>
+    First Name:<input type="text" name="firstname"/>
+    <br>
+    <br>
+    Last Name:<input type="text" name="Lastname"/>
+    <br>
+    <br>
+    Id Number:<input type=texts name=""id/>
+    <br>
+    <br>
+    Password : <input type=password name=""Upass/>
+    <br>
+    </div>
+    <br>
+    <input type="radio" name="sex" value="male">Male
+    <br>
+    <input type="radio" name="sex" value="female">Female
+    <br>
+    <input type="checkbox" name="job" value="Data Science"/>Data Science<br>
+    <input type="checkbox" name="job" value="FrontEnd Dev"/>Frontend Developer<br>
+    <input type="checkbox" name="job" value="BackEnd Dev"/>Backend Developer<br>
+    <input type="checkbox" name="job" value="Full Stack"/>FullStack Developer<br>
+    <select name="city">
+        <option value="city">Lahore</option>
+        <option value="city">Burewala</option>
+        <option value="city">Gujrawala</option>
+        <option value="city">Multan</option>
+        <option value="city">Islamabad</option>
+    </select>
+    <textarea rows="5" cols="30">
+
+    </textarea>
+    <input type="file" name="uploadfile">
+    <input type="submit" name="Submit!"/>
+    </form>
+
+
+    <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Serial No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Student rows will appear here -->
+        </tbody>
+      </table>
+
+      <script>
+        let serial = 1;
+        const form = document.getElementById("studentForm");
+        const tableBody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+    
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // prevent page reload
+    
+          const name = document.getElementById("name").value;
+          const gender = document.getElementById("gender").value;
+          const city = document.getElementById("city").value;
+    
+          const newRow = tableBody.insertRow();
+    
+          newRow.insertCell(0).innerText = serial++;
+          newRow.insertCell(1).innerText = name;
+          newRow.insertCell(2).innerText = gender;
+          newRow.insertCell(3).innerText = city;
+    
+          form.reset(); // clear form fields
+        });
+
+        
+      </script>
+
+
+      
+      
+    
+</body>
+</html>
